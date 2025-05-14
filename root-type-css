@@ -1,0 +1,54 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    background: #f8f8ff;
+}
+
+h1, h2, h3, p {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h4, h5, h6 {
+    display: none !important;
+    all: unset !important;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p + p {
+    margin-top: .75rem;
+}
+
+h1 + p, h2 + p, h3 + p {
+    margin-top: 1rem;
+}
+
+header, main, footer {
+    width: 100%;
+    height: auto;
+}
