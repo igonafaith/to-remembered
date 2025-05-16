@@ -1,0 +1,9 @@
+# WAF Expression Untuk Memblokir Semua Country Kecuali Country Yang ingin di Whitelist
+
+# Contoh 1 = Block All Country Kecuali Indonesia dan 1 IP yang di Whitelist 
+
+(not ip.src eq 123.123.123.123) and (not ip.geoip.country eq "ID")
+
+# Contoh 2 = Block All Country kecuali Indonesia dan lebih dari 1 IP yang di Whitelist
+
+(not ip.src eq 123.123.123.123) and (not ip.geoip.country eq "ID")
