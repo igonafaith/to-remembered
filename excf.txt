@@ -2,8 +2,8 @@
 
 # Contoh 1 = Block All Country Kecuali Indonesia dan 1 IP yang di Whitelist 
 
-(not ip.src eq 123.123.123.123) and (not ip.geoip.country eq "ID")
+(not ip.src eq 123.123.123.123) and (not ip.geoip.country eq "ID") # Ganti IP dan Kode Country ke sesuai yang anda inginkan.
 
 # Contoh 2 = Block All Country kecuali Indonesia dan lebih dari 1 IP yang di Whitelist
 
-(not ip.src eq 123.123.123.123) and (not ip.geoip.country eq "ID")
+(not ip.src in {123.123.123.123 111.111.111.111}) and (not ip.geoip.country eq "ID") # Ganti IP dan Kode Country ke sesuai yang anda inginkan.
